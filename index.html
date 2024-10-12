@@ -35,7 +35,7 @@
 						<p><b>I build scalable models that solve real-world problems. Whether you are looking for a technical approach to data analysis and modeling or eye-catching, insightful dashboards and reports, I am your go-to data expert. .</b><br/>
 							<b>Surgical Tools</b>: Advanced Excel | SQL | Power BI | Python</b></p>
 						<ul class="actions">
-							<li><a href="https://drive.google.com/file/d/1zMvzO7vf52sOKpX50kJ7ZZElnYE00TBH/view?usp=sharing" class="button">Richard Gidi's CV</a></li>
+							<li><a href="https://drive.google.com/file/d/1yiRAn3OM1ewyRMRT9sYJloH443nYZIDU/view?usp=sharing" class="button">Richard Gidi's CV</a></li>
 						</ul>
 					</section>
 
@@ -129,7 +129,7 @@
 						<h2>Get In Touch</h2>
 						<p><b>Oh wow, you’re still reading? I like you! My purpose? To create and contribute! I do this by working on projects that solve real problems or are intriguing
 							and assisting like-minded individuals. It’s a big world out there, and I'm extending an open invitation for you to introduce me to you and your company. I would love to chat 
-							about data, projects, or even your favorite anime!. </b></p>
+							about data, projects, or even your favorite anime! </b></p>
 						<div class="row">
 							<div class="col-8 col-12-small">
 								<form method="post" action="#">
@@ -142,6 +142,28 @@
 								<ul class="actions">
 									<li><input type="submit" value="Send Message" /></li>
 								</ul>
+
+							</form>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+<script>
+    (function(){
+        emailjs.init("u9swUFQpbTM7m7nMv"); // Replace with your EmailJS user ID
+    })();
+
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+        emailjs.sendForm('service_1mwhpwq', 'template_w95a93g', this)
+            .then(function() {
+                alert('Message sent successfully!');
+            }, function(error) {
+                alert('Failed to send message: ' + JSON.stringify(error));
+            });
+    });
+</script>
 							</div>
 							<div class="col-4 col-12-small">
 								<ul class="labeled-icons">
@@ -151,7 +173,7 @@
 									</li>
 									<li>
 										<h3 class="icon solid fa-file-alt"><span class="label">CV</span></h3>
-										<a href="https://drive.google.com/file/d/1zMvzO7vf52sOKpX50kJ7ZZElnYE00TBH/view?usp=sharing">Curriculum Vitae</a>
+										<a href="https://drive.google.com/file/d/1yiRAn3OM1ewyRMRT9sYJloH443nYZIDU/view?usp=sharing">Curriculum Vitae</a>
 			
 									</li>
 									
